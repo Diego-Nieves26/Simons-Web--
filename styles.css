@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Fjalla One", sans-serif;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.center {
+  max-width: 1000px;
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav{
+  flex-direction: column;
+}
+
+nav > .logo {
+  font-size: 4rem;
+}
+
+.game__info {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 2rem;
+}
+
+.game__info > div {
+  border: 5px solid #fff;
+  border-radius: 15px;
+}
+
+h2 {
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.game__info > div span {
+  width: 100%;
+  display: block;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  padding: 5px;
+}
+
+main {
+  flex-direction: column;
+}
+
+.circle {
+  width: 300px;
+  aspect-ratio: 1;
+  background-color: #1e1e1e;
+  overflow: hidden;
+  border-radius: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 15px;
+  position: relative;
+}
+
+.border__circle {
+  padding: 15px;
+  background-color: #1e1e1e;
+  border-radius: 50%;
+}
+
+.circle > article {
+  position: absolute;
+  background-color: #1e1e1e;
+  width: 150px;
+  aspect-ratio: 1;
+  top: 75px;
+  left: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 20;
+}
+
+.circle > article > div{
+  background-color: #000;
+  padding: 5px 15px;
+  color: rgb(0, 245, 0);
+  margin-top: 15px;
+}
+
+.circle > div {
+  background: #fff;
+  opacity: 0.4;
+}
+
+#circle-l-t {
+  border-radius: 110px 0 0 0;
+  background-color: green;
+}
+
+#circle-r-t {
+  border-radius: 0 110px 0 0;
+  background-color: red;
+}
+
+#circle-l-b {
+  border-radius: 0 0 0 110px;
+  background-color: yellow;
+}
+
+#circle-r-b {
+  border-radius: 0 0 110px 0;
+  background-color: blue;
+}
+
+button {
+  --button_radius: 0.75em;
+  --button_color: #000;
+  --button_outline_color: #e8e8e8;
+  font-size: 17px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--button_radius);
+  background: var(--button_outline_color);
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.button_top {
+  display: block;
+  box-sizing: border-box;
+  border: 2px solid var(--button_outline_color);
+  border-radius: var(--button_radius);
+  padding: 0.75em 1.5em;
+  background: var(--button_color);
+  color: var(--button_outline_color);
+  transform: translateY(-0.2em);
+  transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+  transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+  transform: translateY(0);
+}
+
+@media (min-width: 650px) {
+  nav{
+    flex-direction: row;
+  }
+}

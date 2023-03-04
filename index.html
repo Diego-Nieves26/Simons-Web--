@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <nav class="center">
+      <h1 class="logo">SIMON</h1>
+      <div class="game__info">
+        <div>
+          <h2>Turno</h2>
+          <span id="turn_text"></span>
+        </div>
+        <div>
+          <h2>Ronda</h2>
+          <span id="num_text"></span>
+        </div>
+      </div>
+    </nav>
+    <main class="center">
+      <div class="border__circle">
+        <section class="circle">
+          <div id="circle-l-t" class="color"></div>
+          <div id="circle-r-t" class="color"></div>
+          <article>
+            <h3>SIMON</h3>
+            <div id="timer">00:00</div>
+          </article>
+          <div id="circle-l-b" class="color"></div>
+          <div id="circle-r-b" class="color"></div>
+        </section>
+      </div>
+      <button onclick="startGame()">
+        <span class="button_top"> Iniciar </span>
+      </button>
+    </main>
+    <script src="cod.js"></script>
+  </body>
+</html>
