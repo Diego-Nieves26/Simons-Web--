@@ -1,20 +1,15 @@
 # Simons Web 
 <div align="center" width="50">
-    <img src="./img/bg.webp" width="75%"/>
+    <img src="./img/bg.png" width="75%"/>
 </div><br/>
 
 ## Decripcion
 
-Esta aplicacion ayuda a encontrar colores exactos de una imagen.
-
-## Funciones o datos del proyecto
-
-- Obtiene colores de una imagen y los muestra, tambien se pueden copiar.
-- Se puede utilizar una imagen de un dispositivo propio.
+Clon version web del popular juego Simon Says que es un juego de memoria atravez de colores.
 
 ## Link
 
-- https://cool-chebakia-8553fe.netlify.app/
+- https://elaborate-rabanadas-4bc137.netlify.app/
 
 ## Lenguajes o Herramientas
 
